@@ -4,7 +4,7 @@ export default function(state = [], action) {
   switch (action.type) {
     case FETCH_WEATHER:
     // using concat to not change state with push()
-      return state.concact([action.payload.data]);
+      return state.concat([action.payload.data]);
   }
   return state;
 }
